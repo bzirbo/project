@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { LayoutDashboard, Package, ShoppingCart, ClipboardList, History } from 'lucide-react';
+import { LayoutDashboard, Package, ShoppingCart, ClipboardList, History, Scan } from 'lucide-react';
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,6 +13,7 @@ export default function Layout({ children, currentPage, onNavigate }: LayoutProp
     { id: 'inventory', label: 'Store Inventory', icon: Package },
     { id: 'transfer', label: 'New Transfer', icon: ShoppingCart },
     { id: 'orders', label: 'Active Orders', icon: ClipboardList },
+    { id: 'scanner', label: 'Barcode Scanner', icon: Scan },
     { id: 'history', label: 'Traceability', icon: History },
   ];
 

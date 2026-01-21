@@ -6,6 +6,7 @@ import TransferCreation from './screens/TransferCreation';
 import ActiveOrders from './screens/ActiveOrders';
 import OrderDetail from './screens/OrderDetail';
 import Traceability from './screens/Traceability';
+import BarcodeScanner from './screens/BarcodeScanner';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('dashboard');
@@ -39,6 +40,8 @@ function App() {
         );
       case 'history':
         return <Traceability />;
+      case 'scanner':
+        return <BarcodeScanner />;
       default:
         return <Dashboard />;
     }
